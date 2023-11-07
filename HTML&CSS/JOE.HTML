@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento</title>
+        <link rel="stylesheet" href="JOE.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+         
+        <link rel="shortcut icon" href="photos/banner.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+
+            <nav>
+                <ul>
+                    <a class="na" href="JOE.HTML"><span>E</span> vento </a>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#info">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home">
+            <div class="content">
+                <button id="my-button" onclick="toggleColor()"> 
+                    <i class="fa-solid fa-toggle-on"></i>Color Text (red,green)</button>
+
+                <h3> ITS TIME TO CELEBRATE! THE BEST <span id="hh"  onclick="toggleColor()">
+                    EVENT ORGANIZERS</span> </h3>
+                         
+                    
+
+                        <div class="swiper">
+                            
+                            <div class="swiper-wrapper">
+                             
+                              <div class="swiper-slide">
+                                <img src="Photos/happy-male-friends-taking-selfie-drinking-beer.jpg" alt="">
+                              </div>
+                             
+                              <div class="swiper-slide">
+                                <img src="Photos/cheerful-friends-posing-party.jpg" alt="">
+                              </div>
+                             
+                              <div class="swiper-slide">
+                                <img src="Photos/happy-people-celebrating-having-fun.jpg" alt="">
+                              </div>
+                             
+                              <div class="swiper-slide">
+                                <img src="Photos/multiethnic-friends-holding-balloons.jpg" alt="">
+                              </div>
+                             
+                              <div class="swiper-slide">
+                                <img src="Photos/medium-shot-smiley-people-dancing-outdoors.jpg" alt="">
+                              </div>
+                             
+                              <div class="swiper-slide">
+                                <img src="Photos/young-adult-having-fun-white-party.jpg" alt="">
+                              </div>
+                             
+                            </div>
+                             <div class="swiper-pagination"></div>
+                             <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                            <script>
+                                const swiper = new Swiper('.swiper', {
+   
+                                    loop: true,
+                                  
+                                    // If we need pagination
+                                    pagination: {
+                                      el: '.swiper-pagination',
+                                    },
+                                    navigation: {
+                                      nextEl: '.swiper-button-next',
+                                      prevEl: '.swiper-button-prev',
+                                    },
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    // Responsive breakpoints
+                                    breakpoints: {
+                                      // when window width is >= 320px
+                                      320: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20
+                                      },
+                                      // when window width is >= 480px
+                                      480: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30
+                                      },
+                                      // when window width is >= 640px
+                                      640: {
+                                        slidesPerView: 4,
+                                        spaceBetween: 50
+                                      }    
+                                      
+                                      
+                                    }
+                                });
+                                    
+                                    const span = document.getElementById('hh');
+                                    span.onclick = function() {
+                                      span.style.color = 'green';
+                                    };
+                                    function toggleColor() {
+                                        const spanElements = document.querySelectorAll("span#hh");
+                                      
+                                        spanElements.forEach((spanElement) => {
+                                          const currentColor = spanElement.style.color;
+                                          const originalColor = "green";
+                                      
+                                          if (currentColor === originalColor) {
+                                            spanElement.style.color = "red";
+                                          } else {
+                                            spanElement.style.color = originalColor;
+                                          }
+                                        });
+                                      }
+                                      
+                                 
+                            </script>
+
+                <button class="btng" type="button">GET START</button>
+            </div>
+
+        </section>
+
+        <section id="service">
+            <h1 class="h1S"><span id="hh"  onclick="toggleColor()">S</span>ervice</h1>
+            <div class="container">
+                <div class="shape1">
+                    <img src="photos/gmail.png" width="100px" alt>
+                    <h2>Venue Selection</h2>
+                    <p class="pp">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Et,
+                        commodi reiciendis. Minima veniam saepe
+                    </p>
+                    <input class="btn" type="submit" value="Read More">
+                </div>
+                <div class="shape2">
+                    <img src="photos/placeholder.png" width="100px" alt>
+                    <h2>Invitation Card</h2>
+                    <p class="pp">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Et,
+                        commodi reiciendis. Minima veniam saepe
+                    </p>
+                    <input class="btn" type="submit" value="Read More">
+
+                </div>
+                <div class="shape3">
+                    <img src="photos/music.png" width="100px" alt>
+                    <h2>Entertainment</h2>
+                    <p class="pp">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Et,
+                        commodi reiciendis. Minima veniam saepe
+                    </p>
+                    <input class="btn" type="submit" value="Read More">
+
+                </div>
+
+            </div>
+            <div class="container2">
+                <div class="shape4">
+                    <img src="photos/wooden-tableware.png" width="100px" alt>
+                    <h2>Food And Drinks</h2>
+                    <p class="pp">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Et,
+                        commodi reiciendis. Minima veniam saepe
+                    </p>
+                    <input class="btn" type="submit" value="Read More">
+                </div>
+                <div class="shape5">
+                    <img src="photos/photoVID.jpg.png" width="100px" alt>
+                    <h2>Photos And videos</h2>
+                    <p class="pp">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Et,
+                        commodi reiciendis. Minima veniam saepe
+                    </p>
+                    <input class="btn" type="submit" value="Read More">
+
+                </div>
+                <div class="shape6">
+                    <img src="photos/custom food.jpg.png" width="100px" alt>
+                    <h2>Custom Food</h2>
+                    <p class="pp">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Et,
+                        commodi reiciendis. Minima veniam saepe
+                    </p>
+                    <input class="btn" type="submit" value="Read More">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="heading"> About <span id="hh"  onclick="toggleColor()">Us</span></h1>
+            <img id="img3" src="photos/about.jpg.jpg" alt>
+            <div class="text-box">
+                <h2 class="h2a">Celebration For You</h2>
+                <p class="pp3">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Quos dolores, magni tempora dolore dolorem
+                    eum cumque quisquam! Voluptatem excepturi voluptas eligendi
+                    laudantium accusantium molestiae minima
+                    maxime commodi ad,
+                    dignissimos ab!</p>
+                <button class="btng2" type="button">Contact us</button>
+            </div>
+
+        </section>
+
+        <section id="gallery">
+
+            <h2 class="heading1"> <span id="hh"  onclick="toggleColor()">OUR</span>Gallery</h2>
+            <div class="cards">
+                <div class="card1">
+                    <img class="img1"
+                        src="photos/happy-people-celebrating-having-fun.jpg" alt>
+                </div>
+                <div class="card2">
+                    <img class="img1"
+                        src="photos/medium-shot-happy-young-people-partying.jpg"
+                        alt>
+
+                </div>
+                <div class="card3">
+
+                    <img class="img1"
+                        src="photos/happy-male-friends-taking-selfie-drinking-beer.jpg"
+                        alt>
+
+                </div>
+
+            </div>
+            <div class="cards2">
+                <div class="card4">
+                    <img class="img1"
+                        src="photos/medium-shot-smiley-people-dancing-outdoors.jpg"
+                        alt>
+
+                </div>
+                <div class="card5">
+                    <img class="img1"
+                        src="photos/young-adult-having-fun-white-party.jpg" alt>
+
+                </div>
+                <div class="card6">
+                    <img class="img1"
+                        src="photos/multiethnic-friends-holding-balloons.jpg"
+                        alt>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="price">
+            <h1 class="heading2"> <span id="hh"  onclick="toggleColor()">OUR</span>PRICE
+            </h1>
+            <div class="cards4">
+                <div class="shape11">
+                    <h2 class="h22">For Birthdays</h2>
+                    <h3 class="h33">$250.99</h3>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Ful Services
+                        <button class="bth" type="button">Check Out</button>
+                    </div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Decorations</div>
+                    <div class="g1"> <img class="gg" src="photos/checked.png"
+                            alt>Music And Photos</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Food
+                        And Drinks</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Invitation
+                        Card</div>
+                </div>
+
+                <div class="shape11">
+                    <h2 class="h22">For Wedding</h2>
+                    <h3 class="h33">$450.99</h3>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Ful Services
+                        <button class="bth" type="button">Check Out</button>
+                    </div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Decorations</div>
+                    <div class="g1"> <img class="gg" src="photos/checked.png"
+                            alt>Music And Photos</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Food
+                        And Drinks</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Invitation
+                        Card</div>
+                </div>
+                <div class="shape11">
+                    <h2 class="h22">For Concerts</h2>
+                    <h3 class="h33">$650.99</h3>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Ful Services
+                        <button class="bth" type="button">Check Out</button>
+                    </div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Decorations</div>
+                    <div class="g1"> <img class="gg" src="photos/checked.png"
+                            alt>Music And Photos</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Food
+                        And Drinks</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Invitation
+                        Card</div>
+                </div>
+                <div class="shape11">
+                    <h2 class="h22">For Others</h2>
+                    <h3 class="h33">$850.99</h3>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Ful Services
+                        <button class="bth" type="button">Check Out</button>
+                    </div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>
+                        Decorations</div>
+                    <div class="g1"> <img class="gg" src="photos/checked.png"
+                            alt>Music And Photos</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Food
+                        And Drinks</div>
+                    <div class="g1"><img class="gg" src="photos/checked.png" alt>Invitation
+                        Card</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="heading4"><span id="hh" class="hh"  onclick="toggleColor()">Contact</span>us</h1>
+            <form action class="ff">
+                <div class="input-box">
+                    <input type="text" class="inp" name placeholder="Name" />
+                    <input type="email" class="inp" name="Email"
+                        placeholder="Email" id>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="inp" name placeholder="number" id>
+                    <input type="email" class="inp" placeholder="subject" id>
+
+                </div>
+                <textarea class="inp" placeholder="Your message" id="msg"
+                    cols="30" rows="10"></textarea>
+                <button id="btng3" class="btng2" type="button">Contact us</button>
+            </form>
+
+        </section>
+
+        <footer id="info">
+            <div class="box-container2">
+                <div class="box1">
+                   <h2>Branches </h2>
+                   
+                  <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-location-dot"></i>Alexandria</a>
+                  <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-location-dot"></i>Hurghada</a>
+                  <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-location-dot"></i>Sohag</a>
+                  <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-location-dot"></i>Helwan</a>
+                  <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-location-dot"></i>Cairo</a>
+                </div>
+                <div class="box1">
+                    <h2>Quick Links  </h2>
+                   
+                    <a id="joe" href="JOE.HTML"><i class="fa-solid fa-up-right-from-square"></i> Home</a>
+                    <a id="joe" href="JOE.HTML"><i class="fa-solid fa-up-right-from-square"></i>Services</a>
+                    <a id="joe" href="JOE.HTML"><i class="fa-solid fa-up-right-from-square"></i>About</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-up-right-from-square"></i>Gallery</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-up-right-from-square"></i>price</a>
+                </div>
+                <div class="box1">
+                    <h2>Contact Info </h2>
+                   
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-mobile-screen"></i>+201112215391</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-mobile-screen"></i>+201000538851</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-square-envelope"></i>josephmagdy56@gmail.com</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-square-envelope"></i>josephmagdy73@yahoo.com</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-solid fa-building"></i>Egypt-Hurghada-stop shop</a>
+                </div>
+                <div class="box1">
+                    <h2>Follow Us </h2>
+                   
+                    <a id="joe" href="JOE.HTML"> <i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-brands fa-twitter"></i>Twitter</a>
+                    <a id="joe" href="JOE.HTML"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a id="joe" href="JOE.HTML"> <i class="fa-brands fa-github"></i>Github</a>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Created By |  <a href="#"><span id="jj">JOSEPH MAGDY</span> </a>   &copy; All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
